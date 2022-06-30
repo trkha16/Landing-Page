@@ -6,7 +6,7 @@ import PeopleIcon from "@material-ui/icons/People";
 
 const useStyles = makeStyles({
     features: {
-        height: "480px",
+        height: "600px",
         backgroundColor: "#f6f6f6",
         marginTop: "64px",
     },
@@ -18,8 +18,9 @@ const useStyles = makeStyles({
             fontWeight: "800",
             fontSize: "36px",
             color: "#333",
+            textAlign: "center",
             paddingBottom: "10px",
-            marginTop: "80px",
+            marginTop: "100px",
             marginBottom: "70px",
             "&::after": {
                 position: "absolute",
@@ -35,22 +36,23 @@ const useStyles = makeStyles({
         },
     },
     contentContainer: {
-        width: "1000px",
+        width: "1170px",
         margin: "0 auto",
+        paddingBottom: "50px",
     },
     content: {
         "& h3": {
-            fontSize: "18px",
+            fontSize: "20px",
             fontWeight: 600,
             color: "#333",
         },
         "& p": {
             color: "#777777",
-            fontSize: "13px",
+            fontSize: "15px",
         },
     },
     icon: {
-        fontSize: 35,
+        fontSize: 40,
         background: "linear-gradient(to right, #6372ff 0%, #5ca9fb 100%)",
         borderRadius: 999,
         padding: 20,
@@ -68,7 +70,11 @@ function Features() {
                 <Grid item xs={12} className={classes.title}>
                     <h2>features</h2>
                 </Grid>
-                <Grid container className={classes.contentContainer}>
+                <Grid
+                    container
+                    spacing={6}
+                    className={classes.contentContainer}
+                >
                     <Grid item xs={12} md={3} className={classes.content}>
                         <PeopleIcon className={classes.icon} fontSize="small" />
                         <h3>Lorem ipsum</h3>
