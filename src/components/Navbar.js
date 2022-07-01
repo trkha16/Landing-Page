@@ -54,31 +54,13 @@ function Navbar() {
                             className={classes.navContent}
                             alignContent="center"
                         >
-                            <Grid item>
-                                <Link to="#" underline="none">
-                                    features
-                                </Link>
-                            </Grid>
-                            <Grid item>
-                                <Link to="#" underline="none">
-                                    about
-                                </Link>
-                            </Grid>
-                            <Grid item>
-                                <Link to="#" underline="none">
-                                    services
-                                </Link>
-                            </Grid>
-                            <Grid item>
-                                <Link to="#" underline="none">
-                                    gallery
-                                </Link>
-                            </Grid>
-                            <Grid item>
-                                <Link to="#" underline="none">
-                                    testimonials
-                                </Link>
-                            </Grid>
+                            {navBarItem.map((item) => (
+                                <Grid item key={item.id}>
+                                    <Link to={item.src} underline="none">
+                                        {item.content}
+                                    </Link>
+                                </Grid>
+                            ))}
                         </Grid>
                     </Grid>
                 </Toolbar>
@@ -88,3 +70,31 @@ function Navbar() {
 }
 
 export default Navbar;
+
+const navBarItem = [
+    {
+        id: 1,
+        src: "#",
+        content: "features",
+    },
+    {
+        id: 2,
+        src: "#",
+        content: "about",
+    },
+    {
+        id: 3,
+        src: "#",
+        content: "services",
+    },
+    {
+        id: 4,
+        src: "#",
+        content: "gallery",
+    },
+    {
+        id: 5,
+        src: "#",
+        content: "testimonials",
+    },
+];

@@ -6,7 +6,6 @@ import PeopleIcon from "@material-ui/icons/People";
 
 const useStyles = makeStyles({
     features: {
-        height: "600px",
         backgroundColor: "#f6f6f6",
         marginTop: "64px",
     },
