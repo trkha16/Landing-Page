@@ -92,6 +92,7 @@ export default function Gallery() {
                     {images.map((item) => (
                         <Grid
                             item
+                            xs={12}
                             md={4}
                             key={item.id}
                             className={classes.imagesContainer}

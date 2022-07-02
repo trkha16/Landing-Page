@@ -100,7 +100,12 @@ function About() {
                     <h3>Why Choose Us?</h3>
 
                     <Grid container>
-                        <Grid item md={6} className={classes.whyChooseText}>
+                        <Grid
+                            item
+                            xs={6}
+                            md={6}
+                            className={classes.whyChooseText}
+                        >
                             {whyChoose1.map((item) => (
                                 <div>
                                     <CheckIcon className={classes.icon} />
@@ -108,7 +113,12 @@ function About() {
                                 </div>
                             ))}
                         </Grid>
-                        <Grid item md={6} className={classes.whyChooseText}>
+                        <Grid
+                            item
+                            xs={6}
+                            md={6}
+                            className={classes.whyChooseText}
+                        >
                             {whyChoose2.map((item) => (
                                 <div>
                                     <CheckIcon className={classes.icon} />
