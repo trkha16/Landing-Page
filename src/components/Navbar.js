@@ -3,7 +3,12 @@ import { makeStyles } from "@material-ui/styles";
 import { AppBar, Toolbar, Grid, Link } from "@material-ui/core";
 
 const useStyles = makeStyles({
+    root: {
+        width: "100%",
+        display: "block",
+    },
     navbar: {
+        width: "100%",
         backgroundColor: "#fff",
         "& a": {
             textDecoration: "none",
@@ -34,7 +39,7 @@ function Navbar() {
     const classes = useStyles();
 
     return (
-        <div id="navbar">
+        <div id="navbar" className={classes.root}>
             <AppBar position="fixed" className={classes.navbar}>
                 <Toolbar>
                     <Grid container>

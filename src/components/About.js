@@ -81,7 +81,7 @@ function About() {
     const classes = useStyles();
 
     return (
-        <div id="features" className={classes.root}>
+        <div id="about" className={classes.root}>
             <Grid container className={classes.container}>
                 <Grid item md={6} className={classes.leftItem}>
                     <img src={img} alt="about-img"></img>
